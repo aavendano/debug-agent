@@ -16,7 +16,7 @@ Two changes:
 
 ### Package setup
 
-- npm name: `@debug-agent/remote`
+- npm name: `debug-agent-remote`
 - Add to `pnpm-workspace.yaml` (already covered by `packages/*` glob)
 - Use `wrangler` for builds and deployment (not vite-plus — this is a Worker, not a Node library)
 - `package.json` with `wrangler` as a dev dependency, `@cloudflare/workers-types` for types

@@ -1,6 +1,6 @@
 {
-  "name": "@debug-agent/remote",
-  "version": "0.0.1",
+  "name": "debug-agent-remote",
+  "version": "0.0.2",
   "private": true,
   "description": "Hosted log relay for debug-agent (Cloudflare Worker + Durable Object)",
   "license": "MIT",
