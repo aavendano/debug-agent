@@ -1,0 +1,31 @@
+# Django
+Django==5.0.6
+
+# Database
+psycopg2-binary==2.9.9
+
+# REST Framework
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+
+# CORS
+django-cors-headers==4.3.1
+
+# Environment
+python-dotenv==1.0.0
+
+# Async Tasks
+celery==5.3.4
+redis==5.0.1
+
+# AI Providers
+mistralai==0.3.0
+requests==2.31.0
+
+# Multi-tenant
+django-tenant-schemas==1.10.0
+
+# Utilities
+pytz==2026.3.post1
+sqlparse==0.6.0
+setuptools==59.8.0
