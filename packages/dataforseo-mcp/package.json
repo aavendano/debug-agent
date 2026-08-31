@@ -1,0 +1,71 @@
+{
+  "name": "dataforseo-mcp",
+  "version": "0.0.1",
+  "description": "MCP server and CLI for DataForSEO API - browse documentation and make authenticated requests",
+  "keywords": [
+    "mcp",
+    "dataforseo",
+    "seo",
+    "api",
+    "server",
+    "cli"
+  ],
+  "homepage": "https://github.com/aavendano/debug-agent/tree/main/packages/dataforseo-mcp",
+  "bugs": {
+    "url": "https://github.com/aavendano/debug-agent/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aiden Bai",
+    "email": "aiden@million.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aavendano/debug-agent.git"
+  },
+  "bin": {
+    "dataforseo-mcp": "./dist/cli.mjs",
+    "dataforseo": "./dist/cli.mjs"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "start": "node ./dist/cli.mjs",
+    "server": "node ./dist/server.mjs",
+    "test": "vp test run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "picocolors": "^1.1.1",
+    "prompts": "^2.4.2",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.5",
+    "vite-plugin-dts": "^4.5.3",
+    "vite-plus": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -3,17 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vp run debug-agent#build",
+    "build": "vp run debug-agent#build && vp run dataforseo-mcp#build",
     "fmt": "vp fmt",
     "lint": "vp lint",
     "check": "vp check",
     "test": "vp run debug-agent#test",
-    "typecheck": "vp run debug-agent#typecheck",
+    "typecheck": "vp run debug-agent#typecheck && vp run dataforseo-mcp#typecheck",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "pnpm build && changeset publish",
     "dev:website": "pnpm --filter @debug-agent/website dev",
-    "build:website": "pnpm --filter @debug-agent/website build"
+    "build:website": "pnpm --filter @debug-agent/website build",
+    "dataforseo:build": "pnpm --filter dataforseo-mcp build",
+    "dataforseo:start": "pnpm --filter dataforseo-mcp start",
+    "dataforseo:server": "pnpm --filter dataforseo-mcp server"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.6.0",
